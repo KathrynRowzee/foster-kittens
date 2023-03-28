@@ -1,0 +1,31 @@
+.litter_overview {
+  .bold {
+    font-weight: bold;
+  }
+
+  .kitten_profile {
+    margin-top: 35px;
+    width: 25%;
+
+    div {
+      margin-top: -12px;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+
+    .default_kitten_image {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+
+      img {
+        opacity: 50%;
+      }
+    }
+  }
+  
+}

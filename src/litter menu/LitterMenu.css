@@ -1,0 +1,16 @@
+
+
+.header {
+  text-align: center;
+  font-size: 50px;
+  color: #88bdba;
+  text-shadow: 2px 2px 3px black;
+}
+
+.section {
+  background-color: #ffebf7;
+  box-shadow: 0px -2px 2px #4D0000;
+  z-index: 2;
+  padding: 8px 8px;
+  text-align: center;
+}
