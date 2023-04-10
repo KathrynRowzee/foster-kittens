@@ -1,0 +1,42 @@
+.kittens {
+  display: flex;
+
+  select {
+    float: left;
+    margin: 8px;
+  }
+
+  h2 {
+      font-size: 40px;
+      text-decoration: underline;
+      width: 86%;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+
+  .basic_data {
+    width: 20%;
+    text-align: left;
+  }
+
+  .column {
+    width: 50%;
+  
+    img {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+    }
+    .default_kitten_image {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+
+    img {
+        opacity: 50%;
+    }
+    }
+  }
+}

@@ -40,7 +40,7 @@ export const testLitter = {
     ]
     },
     {
-      name: 'GingerBread',
+      name: 'Gingerbread',
       sex: 'M',
       color: 'brown',
       collarColor: 'gold',
