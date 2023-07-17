@@ -1,6 +1,6 @@
 :root {
-  --tabColorSelected: #ffebf7;
-  --tabColorUnselected: #e8cadc;
+  --tabColorSelected: #e1f8fb;
+  --tabColorUnselected: #96d8e0;
 }
 
 .tab {

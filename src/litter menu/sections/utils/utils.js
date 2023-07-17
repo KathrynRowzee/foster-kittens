@@ -86,6 +86,10 @@ const getCalendarDate = (inputDate) => {
   return formattedDate
 }
 
+const getShortDate = (inputDate) => {
+  return (`${inputDate.getMonth()}/${inputDate.getDate()}`)
+}
+
 const getWeeksDaysSince = (inputDate) => {
   const today = new Date()
   const diff = today.getTime() - inputDate.getTime()
@@ -100,4 +104,25 @@ const getWeeksDaysSince = (inputDate) => {
   return formattedDate
 }
 
-export const DateFormatters = {getCalendarDate, getWeeksDaysSince}
+const getDateTime = (inputDate) => {
+  let hour = inputDate.getHours() % 12
+  if (hour === 0) { hour = 12 }
+
+  let minutes = inputDate.getMinutes()
+  if (minutes === 0) { minutes = '00' }
+  
+  let postfix = "AM"
+  if (inputDate.getHours() - 12 >= 0) {
+    postfix = "PM"
+  }
+  const date = getShortDate(inputDate)
+
+  
+
+  const time = `${hour}:${minutes} ${postfix}`
+
+  return `${date} - ${time}`
+    
+}
+
+export const DateFormatters = {getCalendarDate, getWeeksDaysSince, getDateTime}

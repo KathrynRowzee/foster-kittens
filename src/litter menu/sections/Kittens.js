@@ -1,6 +1,7 @@
 import React from "react"
 import { testLitter } from "../../test_queries/test_data"
 import { getKittenByName, getKittenNamesOptions, getFullKittenProfile } from "./utils/utils"
+import WeightLog from "../components/weight_log/weight_log"
 
 const Kittens = () => {
   const [selected, setSelected] = React.useState(testLitter.kittens[0])
@@ -15,7 +16,7 @@ const Kittens = () => {
   }
 
   return (
-    <div className='kittens'>
+    <div className='section_content kittens'>
       <div className="column left">
         <select className="kitten_selector" onChange={onChange}>
           {getKittenNamesOptions(testLitter.kittens)}
@@ -23,7 +24,8 @@ const Kittens = () => {
         {getFullKittenProfile(selected, testLitter.DOB)}
       </div>
       <div className="column right">
-        <div>weight log</div>
+        <WeightLog log={selected
+          .weightLog} />
       </div>
       
     </div>

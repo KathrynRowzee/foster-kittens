@@ -1,0 +1,71 @@
+.title {
+  font-weight: bold;
+  text-align: center;
+  padding-right: 90px;
+  margin: 33px 0px 10px 0px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  th {
+    width: 180px;
+    background-color: #96d8e0;
+  }
+}
+
+.notes {
+  position: relative;
+  display: inline-block;
+
+  .tooltip_text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #dfdfdf;
+    color: #000000;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    bottom: auto;
+    right: 128%;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    .note_line {
+      text-align: left;
+      margin: 10px;
+    }
+
+    .note_line:not(:last-child) {
+      border-bottom: solid #a7a7a7;
+      padding-bottom: 8px;
+    }
+  }
+
+  .tooltip_text::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #dfdfdf;
+  }
+}
+
+.notes:hover {
+  .tooltip_text {
+    visibility: visible;
+    opacity: 1;
+  }
+}

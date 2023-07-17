@@ -1,9 +1,13 @@
 import React from "react"
+import KittenNav from "../components/KittenNav"
 
 const WeightInput = () => {
   return (
-    <div className='weight_input'>
-      Weight Input Section
+    <div className='section_content weight_input'>
+      <KittenNav />
+      <form>
+        <input type="text" />
+      </form>
     </div>
   )
 }

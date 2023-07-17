@@ -6,7 +6,7 @@ import { testLitter } from "../../test_queries/test_data"
 
 const LitterOverview = () => {
   return (
-    <div className='litter_overview'>
+    <div className='section_content litter_overview'>
       <h2>Litter Overview</h2>
       <div>
         <span className='bold'>Date of Birth:</span> {DateFormatters.getCalendarDate(testLitter.DOB)}

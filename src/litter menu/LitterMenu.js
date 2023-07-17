@@ -10,7 +10,7 @@ import {
   Settings
 } from './sections'
 
-import './LitterMenu.css';
+import './LitterMenu.scss';
 
 const LitterMenu = ({ litterName }) => {
   const [activeSection, setActiveSection] = React.useState('Litter Overview')

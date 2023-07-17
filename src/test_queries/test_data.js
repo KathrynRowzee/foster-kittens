@@ -10,12 +10,15 @@ export const testLitter = {
       timestamp: new Date(2023, 3, 15, 10, 0),
       preWeight: 120,
       postWeight: 126,
-      pooped: false
+      difference: undefined,
+      pooped: false,
+      meds: 'eye drops, oral meds'
     },
     {
       timestamp: new Date(2023, 3, 15, 12, 0),
       preWeight: 118,
       postWeight: 128,
+      difference: 2,
       pooped: true
     }
     ]
