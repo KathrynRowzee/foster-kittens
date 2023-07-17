@@ -4,7 +4,7 @@ const TabList = ({sections, activeSection, onChange}) => {
   return (
     <nav id='tab_list'>
       {Object.keys(sections).map((key) => (
-        <value iTab tabName={sections[key].name} selected={sections[key].name === activeSection} onChange={onChange} />
+        <Tab tabName={sections[key].name} selected={sections[key].name === activeSection} onChange={onChange} />
       ))}
     </nav>
   )
